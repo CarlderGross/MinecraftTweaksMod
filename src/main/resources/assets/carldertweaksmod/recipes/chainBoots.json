@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "p p",
+    "p p"
+  ],
+  "key":
+  {
+    "p":
+    {
+      "item": "carldertweaksmod:chain_panel"
+    }
+  },
+  "result":
+  {
+    "item": "minecraft:chainmail_boots"
+  }
+}

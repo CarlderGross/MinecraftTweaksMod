@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "ddd",
+    " s ",
+    " s "
+  ],
+  "key":
+  {
+    "d":
+    {
+      "item": "minecraft:stone",
+      "data": 3
+    },
+    "s":
+    {
+      "item": "minecraft:stick"
+    }
+  },
+  "result":
+  {
+    "item": "carldertweaksmod:diorite_pickaxe"
+  }
+}

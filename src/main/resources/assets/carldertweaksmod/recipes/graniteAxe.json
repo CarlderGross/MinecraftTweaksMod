@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "gg",
+    "sg",
+    "s "
+  ],
+  "key":
+  {
+    "g":
+    {
+      "item": "minecraft:stone",
+      "data": 1
+    },
+    "s":
+    {
+      "item": "minecraft:stick"
+    }
+  },
+  "result":
+  {
+    "item": "carldertweaksmod:granite_axe"
+  }
+}
