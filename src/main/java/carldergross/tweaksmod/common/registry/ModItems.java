@@ -62,11 +62,11 @@ public class ModItems {
 			() -> new ShovelItem(ItemTiers.GRANITE, 1.5F, -3.0F, toolItemProperties()));
 	
 	public static final RegistryObject<Item> ANDESITE_HOE = ITEMS.register("andesite_hoe",
-			() -> new HoeItem(ItemTiers.ANDESITE, 0, -2.0F, toolItemProperties()));
+			() -> new HoeItem(ItemTiers.ANDESITE, -1, -2.0F, toolItemProperties()));
 	public static final RegistryObject<Item> DIORITE_HOE = ITEMS.register("diorite_hoe",
-			() -> new HoeItem(ItemTiers.DIORITE, 0, -2.0F, toolItemProperties()));
+			() -> new HoeItem(ItemTiers.DIORITE, -1, -2.0F, toolItemProperties()));
 	public static final RegistryObject<Item> GRANITE_HOE = ITEMS.register("granite_hoe",
-			() -> new HoeItem(ItemTiers.GRANITE, 0, -2.0F, toolItemProperties()));
+			() -> new HoeItem(ItemTiers.GRANITE, -1, -2.0F, toolItemProperties()));
 	
 	//Ingredients
 	public static final RegistryObject<Item> CHAIN_LINK = ITEMS.register("chain_link",
