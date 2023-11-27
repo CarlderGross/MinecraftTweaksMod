@@ -3,7 +3,7 @@
 		"predicate": {
 			"items": [ "carldertweaks:granite_sword" ]
 		},
-		"item": "tetra:modular_double",
+		"item": "tetra:modular_sword",
 		"modules": {
 			"sword/blade": [ "sword/basic_blade", "basic_blade/granite" ],
 			"sword/hilt": [ "sword/basic_hilt", "basic_hilt/stick"],
