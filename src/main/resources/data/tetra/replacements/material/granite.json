@@ -1,0 +1,57 @@
+[
+	{
+		"predicate": {
+			"items": [ "carldertweaks:granite_sword" ]
+		},
+		"item": "tetra:modular_double",
+		"modules": {
+			"sword/blade": [ "sword/basic_blade", "basic_blade/granite" ],
+			"sword/hilt": [ "sword/basic_hilt", "basic_hilt/stick"],
+			"sword/pommel": [ "sword/decorative_pommel", "decorative_pommel/granite" ],
+			"sword/guard": [ "sword/makeshift_guard", "makeshift_guard/granite" ]
+		}
+	},
+	{
+		"predicate": {
+			"items": [ "carldertweaks:granite_pickaxe" ]
+		},
+		"item": "tetra:modular_double",
+		"modules": {
+			"double/head_left": [ "double/basic_pickaxe_left", "basic_pickaxe/granite" ],
+			"double/head_right": [ "double/basic_pickaxe_right", "basic_pickaxe/granite"],
+			"double/handle": [ "double/basic_handle", "basic_handle/stick" ]
+		}
+	},
+	{
+		"predicate": {
+			"items": [ "carldertweaks:granite_axe" ]
+		},
+		"item": "tetra:modular_double",
+		"modules": {
+			"double/head_left": [ "double/basic_axe_left", "basic_axe/granite" ],
+			"double/head_right": [ "double/butt_right", "butt/granite"],
+			"double/handle": [ "double/basic_handle", "basic_handle/stick" ]
+		}
+	},
+	{
+		"predicate": {
+			"items": [ "carldertweaks:granite_shovel" ]
+		},
+		"item": "tetra:modular_single",
+		"modules": {
+			"single/head": [ "single/basic_shovel", "basic_shovel/granite" ],
+			"single/handle": [ "single/basic_handle", "basic_handle/stick" ]
+		}
+	},
+	{
+		"predicate": {
+			"items": [ "carldertweaks:granite_hoe" ]
+		},
+		"item": "tetra:modular_double",
+		"modules": {
+			"double/head_left": [ "double/hoe_left", "hoe/granite" ],
+			"double/head_right": [ "double/butt_right", "butt/granite"],
+			"double/handle": [ "double/basic_handle", "basic_handle/stick" ]
+		}
+	}
+]

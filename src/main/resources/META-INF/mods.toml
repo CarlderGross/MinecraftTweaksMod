@@ -14,7 +14,7 @@ license="All Rights Reserved"
 # A list of mods - how many allowed here is determined by the individual mod loader
 [[mods]] #mandatory
 modId="carldertweaks" #mandatory
-version="1.0.0" #mandatory
+version="1.0.1" #mandatory
 displayName="CarlderGross' Tweaks Mod" #mandatory
 authors="CarlderGross" # A text field displayed in the mod UI, optional
 # The description text for the mod (multi line!) (#mandatory)

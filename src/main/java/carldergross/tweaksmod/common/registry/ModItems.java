@@ -35,36 +35,34 @@ public class ModItems {
 	//Tools
 	public static final RegistryObject<Item> ANDESITE_SWORD = ITEMS.register("andesite_sword",
 			() -> new SwordItem(ItemTiers.ANDESITE, 3, -2.4F, weaponItemProperties()));
-	public static final RegistryObject<Item> DIORITE_SWORD = ITEMS.register("diorite_sword",
-			() -> new SwordItem(ItemTiers.DIORITE, 3, -2.4F, weaponItemProperties()));
-	public static final RegistryObject<Item> GRANITE_SWORD = ITEMS.register("granite_sword",
-			() -> new SwordItem(ItemTiers.GRANITE, 3, -2.4F, weaponItemProperties()));
-	
 	public static final RegistryObject<Item> ANDESITE_PICK = ITEMS.register("andesite_pickaxe",
 			() -> new PickaxeItem(ItemTiers.ANDESITE, 1, -2.8F, toolItemProperties()));
-	public static final RegistryObject<Item> DIORITE_PICK = ITEMS.register("diorite_pickaxe",
-			() -> new PickaxeItem(ItemTiers.DIORITE, 1, -2.8F, toolItemProperties()));
-	public static final RegistryObject<Item> GRANITE_PICK = ITEMS.register("granite_pickaxe",
-			() -> new PickaxeItem(ItemTiers.GRANITE, 1, -2.8F, toolItemProperties()));
-	
 	public static final RegistryObject<Item> ANDESITE_AXE = ITEMS.register("andesite_axe",
 			() -> new AxeItem(ItemTiers.ANDESITE, 7.0F, -3.2F, toolItemProperties()));
-	public static final RegistryObject<Item> DIORITE_AXE = ITEMS.register("diorite_axe",
-			() -> new AxeItem(ItemTiers.DIORITE, 7.0F, -3.2F, toolItemProperties()));
-	public static final RegistryObject<Item> GRANITE_AXE = ITEMS.register("granite_axe",
-			() -> new AxeItem(ItemTiers.GRANITE, 7.0F, -3.2F, toolItemProperties()));
-	
 	public static final RegistryObject<Item> ANDESITE_SHOVEL = ITEMS.register("andesite_shovel",
 			() -> new ShovelItem(ItemTiers.ANDESITE, 1.5F, -3.0F, toolItemProperties()));
-	public static final RegistryObject<Item> DIORITE_SHOVEL = ITEMS.register("diorite_shovel",
-			() -> new ShovelItem(ItemTiers.DIORITE, 1.5F, -3.0F, toolItemProperties()));
-	public static final RegistryObject<Item> GRANITE_SHOVEL = ITEMS.register("granite_shovel",
-			() -> new ShovelItem(ItemTiers.GRANITE, 1.5F, -3.0F, toolItemProperties()));
-	
 	public static final RegistryObject<Item> ANDESITE_HOE = ITEMS.register("andesite_hoe",
 			() -> new HoeItem(ItemTiers.ANDESITE, -1, -2.0F, toolItemProperties()));
+	
+	public static final RegistryObject<Item> DIORITE_SWORD = ITEMS.register("diorite_sword",
+			() -> new SwordItem(ItemTiers.DIORITE, 3, -2.4F, weaponItemProperties()));
+	public static final RegistryObject<Item> DIORITE_PICK = ITEMS.register("diorite_pickaxe",
+			() -> new PickaxeItem(ItemTiers.DIORITE, 1, -2.8F, toolItemProperties()));
+	public static final RegistryObject<Item> DIORITE_AXE = ITEMS.register("diorite_axe",
+			() -> new AxeItem(ItemTiers.DIORITE, 7.0F, -3.2F, toolItemProperties()));
+	public static final RegistryObject<Item> DIORITE_SHOVEL = ITEMS.register("diorite_shovel",
+			() -> new ShovelItem(ItemTiers.DIORITE, 1.5F, -3.0F, toolItemProperties()));
 	public static final RegistryObject<Item> DIORITE_HOE = ITEMS.register("diorite_hoe",
 			() -> new HoeItem(ItemTiers.DIORITE, -1, -2.0F, toolItemProperties()));
+	
+	public static final RegistryObject<Item> GRANITE_SWORD = ITEMS.register("granite_sword",
+			() -> new SwordItem(ItemTiers.GRANITE, 3, -2.4F, weaponItemProperties()));
+	public static final RegistryObject<Item> GRANITE_PICK = ITEMS.register("granite_pickaxe",
+			() -> new PickaxeItem(ItemTiers.GRANITE, 1, -2.8F, toolItemProperties()));
+	public static final RegistryObject<Item> GRANITE_AXE = ITEMS.register("granite_axe",
+			() -> new AxeItem(ItemTiers.GRANITE, 7.0F, -3.2F, toolItemProperties()));
+	public static final RegistryObject<Item> GRANITE_SHOVEL = ITEMS.register("granite_shovel",
+			() -> new ShovelItem(ItemTiers.GRANITE, 1.5F, -3.0F, toolItemProperties()));
 	public static final RegistryObject<Item> GRANITE_HOE = ITEMS.register("granite_hoe",
 			() -> new HoeItem(ItemTiers.GRANITE, -1, -2.0F, toolItemProperties()));
 	
