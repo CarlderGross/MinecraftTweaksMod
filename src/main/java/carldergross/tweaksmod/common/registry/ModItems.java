@@ -3,33 +3,37 @@ package carldergross.tweaksmod.common.registry;
 import carldergross.tweaksmod.TweaksMod;
 import carldergross.tweaksmod.common.item.ItemTiers;
 
-import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.Item.Properties;
 import net.minecraft.world.item.SwordItem;
 import net.minecraft.world.item.PickaxeItem;
 import net.minecraft.world.item.AxeItem;
 import net.minecraft.world.item.ShovelItem;
 import net.minecraft.world.item.HoeItem;
 
+import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
+import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraft.world.item.CreativeModeTabs;
+
+@Mod.EventBusSubscriber(modid = TweaksMod.MODID, bus = Mod.EventBusSubscriber.Bus.MOD)
 public class ModItems {
 	public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, TweaksMod.MODID);
 	
 	//Helper methods
 	public static Item.Properties basicItemProperties() {
-		return new Item.Properties().tab(CreativeModeTab.TAB_MATERIALS);
+		return new Item.Properties(); //.tab(CreativeModeTab.TAB_MATERIALS); //Creative tabs are no longer registered as part of item.properties
 	}
 	
 	public static Item.Properties weaponItemProperties() {
-		return new Item.Properties().tab(CreativeModeTab.TAB_COMBAT);
+		return new Item.Properties(); //.tab(CreativeModeTab.TAB_COMBAT);
 	}
 	
 	public static Item.Properties toolItemProperties() {
-		return new Item.Properties().tab(CreativeModeTab.TAB_TOOLS);
+		return new Item.Properties(); //.tab(CreativeModeTab.TAB_TOOLS);
 	}
 	
 	//Tools
@@ -71,4 +75,32 @@ public class ModItems {
 			() -> new Item(basicItemProperties()));
 	public static final RegistryObject<Item> CHAIN_PANEL = ITEMS.register("chain_panel",
 			() -> new Item(basicItemProperties()));
+	
+	//register items to creative tabs
+	@SubscribeEvent
+	public static void CreativeTabBuilder(BuildCreativeModeTabContentsEvent event) {
+		if (event.getTabKey() == CreativeModeTabs.COMBAT) {
+			event.accept(ANDESITE_SWORD);
+			event.accept(DIORITE_SWORD);
+			event.accept(GRANITE_SWORD);
+		}
+		else if (event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
+			event.accept(ANDESITE_PICK);
+			event.accept(DIORITE_PICK);
+			event.accept(GRANITE_PICK);
+			event.accept(ANDESITE_AXE);
+			event.accept(DIORITE_AXE);
+			event.accept(GRANITE_AXE);
+			event.accept(ANDESITE_SHOVEL);
+			event.accept(DIORITE_SHOVEL);
+			event.accept(GRANITE_SHOVEL);
+			event.accept(ANDESITE_HOE);
+			event.accept(DIORITE_HOE);
+			event.accept(GRANITE_HOE);
+		}
+		else if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
+			event.accept(CHAIN_LINK);
+			event.accept(CHAIN_PANEL);
+		}
+	}
 }
