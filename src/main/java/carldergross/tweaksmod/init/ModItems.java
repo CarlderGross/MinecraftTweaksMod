@@ -1,9 +1,10 @@
 package carldergross.tweaksmod.init;
 
+import carldergross.tweaksmod.TweaksMod;
 import net.minecraft.item.Item;
-import net.minecraftforge.fml.common.registry.GameRegistry.ObjectHolder;
+import net.minecraftforge.fml.common.registry.GameRegistry.ObjectHolder; 
 
-@ObjectHolder("carldertweaksmod")
+@ObjectHolder(TweaksMod.MODID)
 public class ModItems {
     public static final Item diorite_pickaxe = null;
     public static final Item diorite_shovel = null;

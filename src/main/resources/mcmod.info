@@ -1,9 +1,9 @@
 [
 {
-  "modid": "carldertweaksmod",
+  "modid": "carldertweaks",
   "name": "CarlderGross' Tweaks",
   "description": "Tweaks Minecraft a bit to add in some stuff that probably should have been in vanilla.",
-  "version": "1.0.0",
+  "version": "${version}",
   "mcversion": "1.12.2",
   "url": "",
   "updateUrl": "",
