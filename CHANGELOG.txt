@@ -1,0 +1,14 @@
+# 1.4
+Introduced config file to enable/disable features:
+- Chainmail crafting
+- Three-mushroom stew
+- Craft wool into string
+
+# 1.3 (retroactive versioning)
+Added support for Tetra mod
+
+# 1.2 (retroactive versioning)
+Allowed mushroom stew to be crafted from three of the same mushroom
+
+# 1.1 (retroactive versioning)
+Added recipe to craft any type of wool into string

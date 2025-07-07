@@ -8,17 +8,22 @@ import net.minecraftforge.common.crafting.conditions.ICondition;
 import net.minecraftforge.common.crafting.conditions.IConditionSerializer;
 
 public class ConfigCondition implements ICondition {
-	private static final ResourceLocation NAME = new ResourceLocation(TweaksMod.MODID, "three_shroom_stew");
+	private static final ResourceLocation NAME = new ResourceLocation(TweaksMod.MODID, "config_flag");
 	
-	private static String CONDITION_ID = "three_shroom_stew";
+	//private static String CONDITION_ID = "three_shroom_stew";
 	//TODO: make this into a more generic checker for any config value
 
+	String configFlag;
+	public ConfigCondition(String targetflag) {
+		this.configFlag = targetflag;
+	}
+	
 	public ResourceLocation getID() {
 		return NAME;
 	}
 
 	public boolean test(IContext context) {
-		return CommonConfig.THREE_SHROOM_STEW_ENABLED.get();
+		return CommonConfig.CONFIG_FLAGS.get(configFlag).get();
 	}
 	
 	public static class Serializer implements IConditionSerializer<ConfigCondition> {
@@ -29,11 +34,11 @@ public class ConfigCondition implements ICondition {
 		}
 
 		public void write(JsonObject json, ConfigCondition value) {
-			//nothing to write, currently
+			json.addProperty("flag", value.configFlag);
 		}
 
 		public ConfigCondition read(JsonObject json) {
-			return new ConfigCondition();
+			return new ConfigCondition(json.get("flag").getAsString());
 		}
 		
 	}

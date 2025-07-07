@@ -19,7 +19,8 @@
   },
   "conditions": [
 	{
-		"type": "carldertweaks:three_shroom_stew"
+		"type": "carldertweaks:config_flag",
+		"flag": "three_shroom_stew"
 	}
   ]
 }

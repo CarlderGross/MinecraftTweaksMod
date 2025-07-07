@@ -12,5 +12,11 @@
   },
   "result": {
     "item": "carldertweaks:chain_panel"
-  }
+  },
+  "conditions": [
+  	{
+  		"type": "carldertweaks:config_flag",
+  		"flag": "chainmail_crafting"
+  	}
+  ]
 }

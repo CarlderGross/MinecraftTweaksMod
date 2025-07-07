@@ -8,5 +8,11 @@
   "result": {
     "item": "carldertweaks:chain_link",
     "count": 2
-  }
+  },
+  "conditions": [
+  	{
+  		"type": "carldertweaks:config_flag",
+  		"flag": "chainmail_crafting"
+  	}
+  ]
 }

@@ -16,5 +16,11 @@
   ],
   "result": {
     "item": "minecraft:mushroom_stew"
-  }
+  },
+  "conditions": [
+  	{
+  		"type": "carldertweaks:config_flag",
+  		"flag": "three_shroom_stew"
+  	}
+  ]
 }

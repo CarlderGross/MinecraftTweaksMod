@@ -1,22 +1,28 @@
 package carldergross.tweaksmod.common.config;
 
+import java.util.HashMap;
+
 import net.minecraftforge.common.ForgeConfigSpec;
 
 public class CommonConfig {
 	public static final ForgeConfigSpec.Builder BUILDER = new ForgeConfigSpec.Builder();
 	public static final ForgeConfigSpec SPEC;
 	
-	public static final ForgeConfigSpec.ConfigValue<Boolean> CHAINMAIL_ENABLED;
-	public static final ForgeConfigSpec.ConfigValue<Boolean> WOOL_STRING_ENABLED;
-	//public static final ForgeConfigSpec.ConfigValue<Boolean> STONE_TOOLS_ENABLED;
-	public static final ForgeConfigSpec.ConfigValue<Boolean> THREE_SHROOM_STEW_ENABLED;
+	public static final HashMap<String, ForgeConfigSpec.ConfigValue<Boolean>> CONFIG_FLAGS = new HashMap<String, ForgeConfigSpec.ConfigValue<Boolean>>();
+	
+	private static void addConfigFlag(String flag, boolean default_value) {
+		CONFIG_FLAGS.put(flag, BUILDER.define(flag, default_value));
+	}
 	
 	static {
 		BUILDER.push("carldertweaks-config");
-		//STONE_TOOLS_ENABLED = BUILDER.comment("Andesite, diorite, and granite tool recipes").define("alt-stone-tools", true);
-		CHAINMAIL_ENABLED = BUILDER.comment("Make chainmail craftable").define("chainmail-crafting", true);
-		WOOL_STRING_ENABLED = BUILDER.comment("Craft wool into string").define("wool-to-string", true);
-		THREE_SHROOM_STEW_ENABLED = BUILDER.comment("Craft mushroom stew from three mushrooms of the same type").define("three-shroom-stew", true);
+		
+		BUILDER.comment("Make chainmail craftable");
+		addConfigFlag("chainmail_crafting", true);
+		BUILDER.comment("Craft wool into string");
+		addConfigFlag("wool_to_string", true);
+		BUILDER.comment("Craft mushroom stew from three mushrooms of the same type");
+		addConfigFlag("three_shroom_stew", true);
 		
 		BUILDER.pop();
 		SPEC = BUILDER.build();

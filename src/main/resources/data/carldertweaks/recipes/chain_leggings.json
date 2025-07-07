@@ -12,5 +12,11 @@
   },
   "result": {
     "item": "minecraft:chainmail_leggings"
-  }
+  },
+  "conditions": [
+  	{
+  		"type": "carldertweaks:config_flag",
+  		"flag": "chainmail_crafting"
+  	}
+  ]
 }

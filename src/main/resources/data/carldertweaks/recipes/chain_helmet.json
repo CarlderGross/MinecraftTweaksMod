@@ -11,5 +11,11 @@
   },
   "result": {
     "item": "minecraft:chainmail_helmet"
-  }
+  },
+  "conditions": [
+  	{
+  		"type": "carldertweaks:config_flag",
+  		"flag": "chainmail_crafting"
+  	}
+  ]
 }
