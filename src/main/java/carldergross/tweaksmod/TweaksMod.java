@@ -3,6 +3,7 @@ package carldergross.tweaksmod;
 import net.minecraftforge.fml.ModLoadingContext;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.config.ModConfig;
+import net.minecraftforge.common.crafting.CraftingHelper;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 
@@ -19,5 +20,7 @@ public class TweaksMod {
     	final IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
     	
     	ModItems.ITEMS.register(modEventBus);
+    	
+    	CraftingHelper.register(ConfigCondition.Serializer.INSTANCE);
     }
 }

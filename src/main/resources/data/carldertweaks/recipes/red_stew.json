@@ -16,5 +16,10 @@
   ],
   "result": {
     "item": "minecraft:mushroom_stew"
-  }
+  },
+  "conditions": [
+	{
+		"type": "carldertweaks:three_shroom_stew"
+	}
+  ]
 }
